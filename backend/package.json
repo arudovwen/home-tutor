@@ -1,0 +1,63 @@
+{
+    "private": true,
+    "name": "isl-center",
+    "description": "Imo state website",
+    "version": "1.0.0",
+    "engines": {
+        "node": "14.x"
+    },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "postinstall": "npm run prod"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "bootstrap": "^4.5.2",
+        "cross-env": "^7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^5.0.5",
+        "lodash": "^4.17.20",
+        "popper.js": "^1.12",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.26.11",
+        "sass-loader": "^8.0.0",
+        "vue": "^2.6.12",
+        "vue-svgicon": "^4.0.1-alpha.0",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "@tinymce/tinymce-vue": "^3.2.3",
+        "bootstrap-vue": "^2.17.0",
+        "chart.js": "^2.9.3",
+        "filterizr": "^2.2.4",
+        "isotope-layout": "^3.0.6",
+        "laravel-echo": "^1.8.1",
+        "material-design-icons": "^3.0.1",
+        "pusher-js": "^6.0.3",
+        "swiper": "^5.4.5",
+        "v-calendar": "^1.0.8",
+        "v-emoji-picker": "^2.3.0",
+        "vue-awesome-swiper": "^4.1.1",
+        "vue-chartkick": "^0.6.1",
+        "vue-chat-scroll": "^1.4.0",
+        "vue-html2pdf": "^1.7.3",
+        "vue-json-csv": "^1.2.11",
+        "vue-moment": "^4.1.0",
+        "vue-paystack": "^2.0.3",
+        "vue-pdf": "^4.1.0",
+        "vue-router": "^3.4.5",
+        "vue-single-date-picker": "^0.5.11",
+        "vue-toasted": "^1.1.28",
+        "vue-waves-button": "^1.0.4",
+        "vue2-circle-progress": "^1.2.3",
+        "vueisotope": "^3.1.2",
+        "vuejs-countdown-timer": "^2.1.2",
+        "vuejs-datetimepicker": "^1.1.13"
+    }
+}
